@@ -5,15 +5,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>SharedApp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="./main.css">
 
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
-
 
     <div class="ui fixed inverted menu">
       <div class="ui container">
@@ -21,43 +22,64 @@
           <img class="logo">
           APP
         </a>
-        <a href="//sharedcare.io" class="item">Home</a>
-        <div class="ui simple dropdown item">
-          Other <i class="dropdown icon"></i>
-          <div class="menu">
-            <a class="item" href="//sharedcare.io/profile">Profile</a>
-            <a class="disabled item" href="//blog.sharedcare.io">blog</a>
-            <div class="divider"></div>
-            <div class="item">
-              <i class="dropdown icon"></i>
-              Project
-              <div class="menu">
-                <a class="item" href="//sharedcare.io/ImageCaptioning">Image Captioning</a>
-              </div>
+        <a class="ui browse right item">
+          <i class="bars icon"></i>
+        </a>
+        <div class="ui following popup bottom center transition hidden vertical menu">
+          <a class="active teal item" href="//app.sharedcare.io">
+            APP
+          </a>
+          <a class="item" href="//blog.sharedcare.io">
+            Blog
+          </a>
+          <a class="item" href="//sharedcare.io">
+            Sharedcare.io
+          </a>
+          <div class="item ui search">
+            <div class="ui transparent icon input">
+              <input class="prompt" type="text" placeholder="Search App...">
+              <i class="search icon"></i>
             </div>
           </div>
         </div>
       </div>
+
     </div>
 
-    <div class="ui three column grid">
-        <div class="column">
-            <div class="ui segment">
-                <img src="white-image.png" alt="blank">
-            </div>
-        </div>
-        <div class="column">
-            <div class="ui segment">
-                <img src="white-image.png" alt="blank">
-            </div>
-        </div>
-        <div class="column">
-            <div class="ui segment">
-                <img src="white-image.png" alt="blank">
-            </div>
-        </div>
-    </div>
+    <div class="app ui container">
+      <div class="ui text container">
+        <h1 class="ui dividing header">SharedApp</h1>
 
+        <h3 class="first">Grader</h3>
+        <div class="ui piled blue segment">
+          <h4 class="ui header">Efficient Excel Editor</h4>
+          <p>You can use this app to edit your excel file step by step. First, upload the excel file and you can get a preview of it.
+            To efficiently use the editing tool, press enter to jump to next input. Once you get your file edited you can download it.
+            <a class="ui right floated right labeled icon primary button" href="//app.sharedcare.io/grader/" style="margin-top: 20px;">
+              <i class="right arrow icon"></i>
+              Open
+            </a>
+          </p>
+          <p>Using <a href="https://sheetjs.com/">SheetJS</a> to read, modify and write the excel file.</p>
+
+        </div>
+      </div>
+      <div class="ui horizontal divider header">
+        <i class="angle down icon"></i>
+        Coming Up
+      </div>
+      <div class="ui text container">
+
+        <h3 class="first">Maybe Coming Soon</h3>
+        <div class="ui piled red segment">
+          <h4 class="ui header">A Placeholder</h4>
+          <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+          <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+          <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+        </div>
+
+      </div>
+    </div>
     
     <footer>
       <div class="ui inverted vertical footer segment">
@@ -73,9 +95,6 @@
             <button class="ui circular github icon button" onclick="window.open('https://github.com/sharedcare');">
               <i class="github icon"></i>
             </button>
-            <button class="ui circular bitbucket icon button" onclick="window.open('https://bitbucket.org/sharedcare/');">
-              <i class="bitbucket icon"></i>
-            </button>
 
           </div>
 
@@ -88,12 +107,10 @@
               <div class="ui big breadcrumb">
                 <div class="section">Sharedcare.io</div>
                 <div class="divider"> / </div>
-                <a class="section" href="../">Home</a>
-                <i class="right chevron icon divider"></i>
-                <div class="active section">Gallery</div>
+                <a class="section" href="./">App</a>
               </div>      
             </div>
-            <a class="item contact">Contact</a>
+            <a class="item contact" href="//sharedcare.io">Home</a>
           </div>
         </div>
       </div>

@@ -1,5 +1,21 @@
+html.ios {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+html.ios,
+html.ios body {
+    height: initial !important;
+}
+
 .app.ui.container {
     margin: 100px auto;
+}
+
+.title.label {
+    float: right;
+    margin: 0 30px 20px 10px;
+    transform: rotate(-10deg);
 }
 
 .ui.piled.segment,

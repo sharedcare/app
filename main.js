@@ -56,9 +56,9 @@ function search() {
             description: 'Efficient excel editor',
         },
         {
-            title: 'Maybe Coming Soon',
-            url: '//app.sharedcare.io',
-            description: 'A placeholder',
+            title: 'Gallery App',
+            url: '//gallery-app.sharedcare.io',
+            description: 'A react app',
         }
     ];
 

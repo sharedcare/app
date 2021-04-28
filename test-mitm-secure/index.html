@@ -22,16 +22,20 @@
         is_secure: true,
         username,
         password
-      }
+      };
       let publicKey = forge.pki.publicKeyFromPem(pem_file);
       let secretMessage = JSON.stringify(reqBody);
       let encrypted = publicKey.encrypt(secretMessage, "RSA-OAEP", {
         md: forge.md.sha256.create()
       });
       let base64 = forge.util.encode64(encrypted);
+      let secureBody = {
+        is_secure: true,
+        base64
+      };
       fetch('https://q2t9qzmqe0.execute-api.us-east-2.amazonaws.com/dev/',{
         method: 'POST',
-        body: JSON.stringify(base64)
+        body: JSON.stringify(secureBody)
       }).then(res => res.json()).then(response => {
         document.getElementById('result').innerText = JSON.stringify(response);
         document.getElementById('result').style.color = response.status === 'Success'?'green':'red'
